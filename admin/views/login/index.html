@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <link rel="stylesheet" href="/code/web_js_project/admin/lib/css/bootstrap.css">
+  <script src="/code/web_js_project/admin/lib/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="logincontainer">
+    <h2>艾企网站后台管理系统</h2>
+    <form id="loginform">
+      <div class="mb-3">
+        <label for="username" class="form-label">用户名</label>
+        <!-- required : 表示必填项 -->
+        <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">密码</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">登录</button>
+      <!-- 友好提示 -->
+      <div id="loginwarning" class="form-text" style="display: none;color: red;">用户名密码不匹配</div>
+    </form>
+  </div>
+  <!-- 在此处引入index.js，是为了等dom加载完毕 -->
+  <script src="index.js"></script>
+</body>
+
+</html>

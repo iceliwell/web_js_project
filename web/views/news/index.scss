@@ -1,0 +1,72 @@
+@import '..\\style.scss';
+
+.newsbg {
+  background-image: url(http://localhost:3000/bg.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .search-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 100;
+
+    .list-group {
+      position: absolute;
+      width: 100%;
+      opacity: 0.9;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.cardContainer {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    width: 330px;
+
+    .imgcover {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
+
+.newsTabs {
+  padding: 40px;
+  padding-top: 0;
+
+  .tab-link {
+    color: black;
+  }
+
+  .card {
+    &:hover {
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    }
+
+    .imgcover {
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
